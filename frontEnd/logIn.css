@@ -1,3 +1,8 @@
+html,body {
+  height: 100%
+}
+
+
 body    {
     background: linear-gradient(#212121,#7B1FA2);
 
@@ -14,7 +19,6 @@ img {
     width:180px;       /* タイトル画、横 */
     height:50px;       /* タイトル画、縦 */
 }
-
 /*ログインボタンの設定*/
 input[type="submit"],
 submit  {
@@ -27,32 +31,3 @@ submit  {
     background: #757575;  /*背景灰色*/
     border-radius: 5px;
 }
-
-/*    ここから使用できそうなパーツメモ
-
-input[type="text"],
-  width: 300px;
-
-
-/*
-input[type="text"],
-textarea{
-  vertical-align: middle;
-textarea{
-  width: 50px;
-}
-
-  margin: 0;
-  padding: 0;
-  height: 34px;
-  border: 1px solid #000000;
-  line-height: 1.2em;
-
-  font-size: 1.2em;
-}
-input[type="text"]{
-  width: 50px;
-}
-
-
-    position:center;
