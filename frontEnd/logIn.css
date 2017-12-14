@@ -9,8 +9,10 @@ body    {
 }
 p {
     color: white;
-}
+    margin: ;
+    padding: ;
 
+}
 a:link {
     color:#FFFFFF; }
 
@@ -18,7 +20,7 @@ a:link {
 img {
     width:180px;       /* タイトル画、横 */
     height:50px;       /* タイトル画、縦 */
-}
+
 /*ログインボタンの設定*/
 input[type="submit"],
 submit  {
@@ -30,4 +32,12 @@ submit  {
     color: #FFFFFF;
     background: #757575;  /*背景灰色*/
     border-radius: 5px;
+}
+
+/*リスト使うかも知れない用*/
+ul li {
+    list-style: none;
+}
+label {
+    margin-right: 100px;
 }
