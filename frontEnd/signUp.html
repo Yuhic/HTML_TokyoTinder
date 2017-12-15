@@ -1,150 +1,156 @@
-<!--
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
--->
-<link rel="stylesheet" type="text/css" href="haikeigazou.css">
-<title>V‹K“o˜^‰æ–Ê</title>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="logIn.css">
+<title>æ–°è¦ç™»éŒ²ç”»é¢</title>
 </head>
 <body>
-<div>
-<img src="file:///C:/Users/ica/Desktop/‰æ‘œŽû”[—p/DesignEvo.png">
-</div>
-<form>
+    <div>
+        <img src="./img/logo.png">
+      <header>
+    </header>
+    </div>
+    <form>
+    <ul>
 
-<!--‰æ‘œƒAƒbƒvƒ[ƒh-->
-<p>ŽÊ^*
-<input type="file">
-</p>
+<!--â– â– â– ç”»åƒã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰â– â– â– -->
+<li class="file">
+<label for="username">å†™çœŸ*</label>
+<input id="file"type="file"name="file" placeholder="ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠž" size="60">
+<p>â€»ç”»åƒã®æœ€å¤§ã‚µã‚¤ã‚ºï¼š700KB</p>
+<p>å¯¾å¿œãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã¯GIFã€JPEGã€PNGã§ã™ã€‚</p>
+</li>
 
-<p>
-¦‰æ‘œ‚ÌÅ‘åƒTƒCƒYF700KB
-‘Î‰žƒtƒH[ƒ}ƒbƒg‚ÍGIFAJPEGAPNG‚Å‚·B
-</p>
+<!--â– â– â– åå‰â– â– â– -->
+<li class="name">
+<label for="name">åå‰*</label>
+<input id="name" type="text" name="name" placeholder="ãƒ¦ãƒ¼ã‚¶ãƒ¼å" size="60">
+</li>
 
-<!--–¼‘O-->
-<p>–¼‘O*
-<input type="text" name="ƒ†[ƒU[–¼">
-</p>
+<!--â– â– â– æ€§åˆ¥-â– â– â– -->
+<li class="gender">
+<label for="gender">æ€§åˆ¥*</label>
+<input id="radio" type="radio" name="male" placeholder=ç”·æ€§ size="60">
 
-<!--«•Ê-->
-<p>«•Ê*
-<input type="radio" name="male" value="’j«"> ’j«
-<input type="radio" name="female" value="—«"> —«
-</p>
+<input type="radio" name="female" value="å¥³æ€§"> å¥³æ€§
+</li>
 
-<!--ID-->
-<p>ID*
-<input type="text" name="name">
-</p>
+<!--â– â– â– IDâ– â– â– -->
+<li class="ID">
+<label for="id">ID*</label>
+<input id="text" type="text" name="text" placeholder=ID size="60">
+</li>
 
-<!--ƒpƒXƒ[ƒh-->
-<p>
-Password*
+<!--â– â– â– ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰â– â– â– -->
+<li class="Password">
+<label for="password">Password*</label>
+<input id="password" type="password" name="password" placeholder=Password size="60">
+
 <input type="password" name="pass1">
-</p>
+</li>
 
-<!--ƒpƒXƒ[ƒhŠm”F—p-->
-<p>
-Password(Šm”F—p)*
+<!--â– â– â– ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ç¢ºèªç”¨â– â– â– -->
+<li>
+Password(ç¢ºèªç”¨)*
 <input type="password" name="pass2">
-</p>
+</li>
 
-<!--”N—î-->
-<p>
-”N—î*
+<!--â– â– â– å¹´é½¢â– â– â– -->
+<li>
+å¹´é½¢*
 <select name="year">
 <option value="" selected>1990</option>
-<option value="1990”N">1990”N</option>
-<option value="1991”N">1991”N</option>
-<option value="1992”N">1992”N</option>
-<option value="1993”N">1993”N</option>
-<option value="1994”N">1994”N</option>
-<option value="1995”N">1995”N</option>
-<option value="1996”N">1996”N</option>
-<option value="1997”N">1997”N</option>
-<option value="1998”N">1998”N</option>
-<option value="1999”N">1999”N</option>
-<option value="2000”N">2000”N</option>
-<option value="2001”N">2001”N</option>
-<option value="2002”N">2002”N</option>
-<option value="2003”N">2003”N</option>
-<option value="2004”N">2004”N</option>
-<option value="2005”N">2005”N</option>
-<option value="2006”N">2006”N</option>
-<option value="2007”N">2007”N</option>
-<option value="2008”N">2008”N</option>
-<option value="2009”N">2009”N</option>
-<option value="2010”N">2010”N</option>
-<option value="2011”N">2011”N</option>
-<option value="2012”N">2012”N</option>
-<option value="2012”N">2013”N</option>
-<option value="2012”N">2014”N</option>
-<option value="2012”N">2015”N</option>
-<option value="2012”N">2016”N</option>
-<option value="2012”N">2017”N</option>
+<option value="1990å¹´">1990å¹´</option>
+<option value="1991å¹´">1991å¹´</option>
+<option value="1992å¹´">1992å¹´</option>
+<option value="1993å¹´">1993å¹´</option>
+<option value="1994å¹´">1994å¹´</option>
+<option value="1995å¹´">1995å¹´</option>
+<option value="1996å¹´">1996å¹´</option>
+<option value="1997å¹´">1997å¹´</option>
+<option value="1998å¹´">1998å¹´</option>
+<option value="1999å¹´">1999å¹´</option>
+<option value="2000å¹´">2000å¹´</option>
+<option value="2001å¹´">2001å¹´</option>
+<option value="2002å¹´">2002å¹´</option>
+<option value="2003å¹´">2003å¹´</option>
+<option value="2004å¹´">2004å¹´</option>
+<option value="2005å¹´">2005å¹´</option>
+<option value="2006å¹´">2006å¹´</option>
+<option value="2007å¹´">2007å¹´</option>
+<option value="2008å¹´">2008å¹´</option>
+<option value="2009å¹´">2009å¹´</option>
+<option value="2010å¹´">2010å¹´</option>
+<option value="2011å¹´">2011å¹´</option>
+<option value="2012å¹´">2012å¹´</option>
+<option value="2012å¹´">2013å¹´</option>
+<option value="2012å¹´">2014å¹´</option>
+<option value="2012å¹´">2015å¹´</option>
+<option value="2012å¹´">2016å¹´</option>
+<option value="2012å¹´">2017å¹´</option>
 </select>
 <select name="month">
-<option value="" selected>1ŒŽ</option>
-<option value="1ŒŽ">1ŒŽ</option>
-<option value="2ŒŽ">2ŒŽ</option>
-<option value="3ŒŽ">3ŒŽ</option>
-<option value="4ŒŽ">4ŒŽ</option>
-<option value="5ŒŽ">5ŒŽ</option>
-<option value="6ŒŽ">6ŒŽ</option>
-<option value="7ŒŽ">7ŒŽ</option>
-<option value="8ŒŽ">8ŒŽ</option>
-<option value="9ŒŽ">9ŒŽ</option>
-<option value="10ŒŽ">10ŒŽ</option>
-<option value="11ŒŽ">11ŒŽ</option>
-<option value="12ŒŽ">12ŒŽ</option>
+<option value="" selected>1æœˆ</option>
+<option value="1æœˆ">1æœˆ</option>
+<option value="2æœˆ">2æœˆ</option>
+<option value="3æœˆ">3æœˆ</option>
+<option value="4æœˆ">4æœˆ</option>
+<option value="5æœˆ">5æœˆ</option>
+<option value="6æœˆ">6æœˆ</option>
+<option value="7æœˆ">7æœˆ</option>
+<option value="8æœˆ">8æœˆ</option>
+<option value="9æœˆ">9æœˆ</option>
+<option value="10æœˆ">10æœˆ</option>
+<option value="11æœˆ">11æœˆ</option>
+<option value="12æœˆ">12æœˆ</option>
 </select>
 <select name="day">
-<option value="" selected>1“ú</option>
-<option value="1“ú">1“ú</option>
-<option value="2“ú">2“ú</option>
-<option value="3“ú">3“ú</option>
-<option value="4“ú">4“ú</option>
-<option value="5“ú">5“ú</option>
-<option value="6“ú">6“ú</option>
-<option value="7“ú">7“ú</option>
-<option value="8“ú">8“ú</option>
-<option value="9“ú">9“ú</option>
-<option value="10“ú">10“ú</option>
-<option value="11“ú">11“ú</option>
-<option value="12“ú">12“ú</option>
-<option value="13“ú">13“ú</option>
-<option value="14“ú">14“ú</option>
-<option value="15“ú">15“ú</option>
-<option value="16“ú">16“ú</option>
-<option value="17“ú">17“ú</option>
-<option value="18“ú">18“ú</option>
-<option value="19“ú">19“ú</option>
-<option value="20“ú">20“ú</option>
-<option value="21“ú">21“ú</option>
-<option value="22“ú">22“ú</option>
-<option value="23“ú">23“ú</option>
-<option value="24“ú">24“ú</option>
-<option value="25“ú">25“ú</option>
-<option value="26“ú">26“ú</option>
-<option value="27“ú">27“ú</option>
-<option value="28“ú">28“ú</option>
-<option value="29“ú">29“ú</option>
-<option value="30“ú">30“ú</option>
-<option value="31“ú">31“ú</option>
-</select>
+<option value="" selected>1æ—¥</option>
+<option value="1æ—¥">1æ—¥</option>
+<option value="2æ—¥">2æ—¥</option>
+<option value="3æ—¥">3æ—¥</option>
+<option value="4æ—¥">4æ—¥</option>
+<option value="5æ—¥">5æ—¥</option>
+<option value="6æ—¥">6æ—¥</option>
+<option value="7æ—¥">7æ—¥</option>
+<option value="8æ—¥">8æ—¥</option>
+<option value="9æ—¥">9æ—¥</option>
+<option value="10æ—¥">10æ—¥</option>
+<option value="11æ—¥">11æ—¥</option>
+<option value="12æ—¥">12æ—¥</option>
+<option value="13æ—¥">13æ—¥</option>
+<option value="14æ—¥">14æ—¥</option>
+<option value="15æ—¥">15æ—¥</option>
+<option value="16æ—¥">16æ—¥</option>
+<option value="17æ—¥">17æ—¥</option>
+<option value="18æ—¥">18æ—¥</option>
+<option value="19æ—¥">19æ—¥</option>
+<option value="20æ—¥">20æ—¥</option>
+<option value="21æ—¥">21æ—¥</option>
+<option value="22æ—¥">22æ—¥</option>
+<option value="23æ—¥">23æ—¥</option>
+<option value="24æ—¥">24æ—¥</option>
+<option value="25æ—¥">25æ—¥</option>
+<option value="26æ—¥">26æ—¥</option>
+<option value="27æ—¥">27æ—¥</option>
+<option value="28æ—¥">28æ—¥</option>
+<option value="29æ—¥">29æ—¥</option>
+<option value="30æ—¥">30æ—¥</option>
+<option value="31æ—¥">31æ—¥</option>
+</select></li>
 
-<!--Ž©ŒÈƒvƒƒtƒB[ƒ‹-->
-<p>
-Ž©ŒÈƒvƒƒtƒB[ƒ‹*
+<!--â– â– â– è‡ªå·±ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«â– â– â– -->
+<li>
+è‡ªå·±ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«*
 <input type="text" name="profile">
-</p>
+</li>
 
-<p>
-<input type="submit" value="‘—M">
-</p>
+<li>
+<input type="submit" value="é€ä¿¡">
+</li>
 
+</ul>
 </form>
 </body>
 </html>

@@ -7,20 +7,34 @@
     </head>
     <body>
         <div>
-          <header></header>
             <img src="./img/logo.png">
+          <header>
+        </header>
         </div>
-        <form action="list.html" method="post">
-            <p>ユーザID*
-            <input type="text" name="user_id" value=""><br>
-            ※半角英数字4〜16文字以内</p>
-            <p>パスワード*
-            <input type="password" name="password"><br>
-            ※半角英数字4〜16文字以内</p>
+        <form>
+        <ul>
+
+           <li class="username">
+            <label for="username">ユーザID*</label>
+            <input id="username" type="text" name="username" placeholder="ID" size="60">
+            <p>※半角英数字4〜16文字以内</p></li>
+
+            <li class="password">
+            <label for="password">パスワード*</label>
+            <input id="password" type="password" name="password" placeholder=Password size="60">
+            <p>※半角英数字4〜16文字以内</p></li>
+
+            <li class="signup">
             <a href="./signUp.html" target="">新規登録</a>
-            <p>
-            <input type="submit" value="ログイン">
-          </p>
+            <input id="button" type="submit" name="button" value="ログイン"><p></li>
+
+
+              <!--■■■エラー文調整中■■■!-->
+
+            <li class="errormessage">
+            <id="errormessage">エラー</li>
+
+          </ul>
         </form>
     </body>
 </html>
