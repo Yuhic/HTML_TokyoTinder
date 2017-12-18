@@ -55,16 +55,63 @@ li {
     padding-bottom:0px;
 
 }
+/*■■■ファイルの配置設定■■■*/
+ul li.file{
+  margin-bottom: 10px;
+  padding-left :80px;
+}
+/*■■■性別の配置設定■■■*/
+ul li.gender{
+  margin-bottom: 10px;
+  padding-left :80px;
+}
+/*■■■生年月日配置設定■■■*/
+ul li.birthday{
+  margin-bottom: 10px;
+  padding-left :80px;
+
+
+}
+/*■■■自己プロフィール配置設定■■■*/
+ul li.profile{
+  margin-bottom: 10px;
+  padding-left :80px;
+
+}
+/*■■■ユーザーID配置設定(login.html)■■■*/
 ul li.username {
     margin-bottom: 10px;
     padding-left :80px;
 
 }
+/*■■■名前配置設定(signUp.html)■■■*/
+ul li.name {
+    margin-bottom: 10px;
+    padding-left :80px;
 
+}
+/*■■■パスワード配置設定(login.html)■■■*/
 ul li.password {
     margin-bottom: 10px;
     padding-left :80px;
 }
+
+/*■■■Password配置設定(signUp.html)■■■*/
+ul li.password1 {
+    margin-bottom: 10px;
+    padding-left :80px;
+}
+
+/*■■■Password確認用配置設定(signUp.html)■■■*/
+ul li.password2 {
+    margin-bottom: 10px;
+    padding-left :80px;
+}
+ul li.id {
+    margin-bottom: 10px;
+    padding-left :80px;
+}
+
 
 /* ■■■エラー文（調整中）■■■ */
 
@@ -72,10 +119,6 @@ ul li.errormessage {
     color: #C2185B;
     background: #F8BBD0;
     width:550px;
-
-
-
-
 
 }
 label {
@@ -86,10 +129,11 @@ label {
 }
 
 ul {
-    width: 500;
+    width: 100;
     margin: 0 auto;
 }
-
+/*■■■ログインボタン■■■
+*/
 input#button {
 
     margin-left: 100px;
@@ -100,11 +144,21 @@ input#button {
     float: center;
 
 }
+/*■■■送信ボタン■■■
+*/
+input#button2 {
 
+    margin-left: 100px;
+    background: blue;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    float: center;
+
+}
 input,
 textarea {
     border: solid 1px #757575;
     border-radius: 5px;
     padding: 5px;
 }
-uuu
