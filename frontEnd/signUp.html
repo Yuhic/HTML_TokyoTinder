@@ -32,8 +32,8 @@
 <!--■■■性別-■■■-->
 <li class="gender">
 <label for="gender">性別*</label>
-<input id="gender" type="radio" name="gender" "ユーザー名" size="60">男性
-<input id="gender" type="radio" name="gender" placeholder="aaa" size="60">女性
+<input class="gender" type="radio" name="gender" "ユーザー名" size="60">男性
+<input class="gender" type="radio" name="gender" placeholder="aaa" size="60">女性
 </li>
 
 <!--■■■ID■■■-->
@@ -46,23 +46,21 @@
 <!--パスワード-->
 <li class="password1">
 <label for="password1">Password*</label>
-<input id="password1" type="password1" name="password1" placeholder=Password size="60">
+<input class="password1" type="password1" name="password1" placeholder=Password size="60">
 <p>※半角英数字4〜16文字以内</p>
 </li>
-
-
 
 <!--パスワード確認用-->
 <li class="password2">
 <label for="password2">Password(確認用)*</label>
-<input id="password2" type="password2" name="password2" placeholder=Password size="60">
+<input class="password2" type="password2" name="password2" placeholder=Password size="60">
 <p>※半角英数字4〜16文字以内</p>
 </li>
 
 <!--■■■年齢■■■-->
 <li class="birthday">
 <label for="birthday">年齢*</label>
-年齢*
+
 <select name="year">
 <option value="" selected>1990</option>
 <option value="1990年">1990年</option>
@@ -147,25 +145,27 @@
 <!--■■■自己プロフィール■■■-->
 <li class="profile">
 <label for="profile">自己プロフィール*</label>
-<textarea id="profile" name="profile" cols="60" rows="20"></textarea>
+<textarea id="profile" name="profile" cols="60" rows="10"></textarea>
+<p>※200文字以内</p>
+</li>
+
+<li class="button2">
+<input id="button2" type="submit" name="button2" value="送信"></li>
+
+
+<!--■■■エラーメッセージ　1　■■■-->
+
+<li class="errormessage">
+<id="errormessage">未入力の項目があります。すべての項目を入力してください。
 </li>
 
 
-<li>
-<li class="button2">
-<input id="button2" type="submit" name="button2" value="送信"></li>
+<!--■■■エラーメッセージ　2　■■■-->
+<li class="errormessage">
+<id="errormessage">このIDはすでに使用されています。別のIDを指定してください。
 </li>
 </ul>
 </form>
+
 </body>
 </html>
-
-<!--■■■エラーメッセージ　1　■■■-->
-<p>
-未入力の項目があります。すべての項目を入力してください。
-</p>
-
-<!--■■■エラーメッセージ　2　■■■-->
-<p>
-このIDはすでに使用されています。別のIDを指定してください。
-</p>
