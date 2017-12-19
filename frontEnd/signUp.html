@@ -14,47 +14,88 @@
 <form>
 <ul>
 
-<!--■■■画像アップロード■■■-->
-<li class="file">
-<label for="username">写真*</label>
-<input id="file"type="file"name="file" placeholder="ファイルを選択" size="60">
-<p>※画像の最大サイズ：700KB</p>
-<p>対応フォーマットはGIF、JPEG、PNGです。</p>
+<!--ファイルアップロード調整中-->
+<!--
+試しにスクリプトも入ってたり
+後ほど別ファイルに置換してほしい部分。。。
+-->
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+  $(function(){
+    $('#myfile').change(function(e){
+      //ファイルオブジェクトを取得する
+      var file = e.target.files[0];
+      var reader = new FileReader();
+
+      //画像でない場合は処理終了
+      if(file.type.indexOf("image") < 0){
+        alert("画像ファイルを指定してください。");
+        return false;
+      }
+
+      //アップロードした画像を設定する
+      reader.onload = (function(file){
+        return function(e){
+          $("#img1").attr("src", e.target.result);
+          $("#img1").attr("title", file.name);
+        };
+      })(file);
+      reader.readAsDataURL(file);
+
+    });
+  });
+  </script>
+
+  <!--画像アップロード-->
+<li>
+<p class=clearfix>
+<img id="img1" style="width:160px;height:200px;" />
+<input type="file" id="myfile"><br>
+</p>
+
+  <!--画像アップロードボタン-->
+<p class="button3">
+<input id="button3" type="submit" name="button3" value="画像をアップロード"></li>
+</li>
+<p>　※画像の最大サイズ：700KB</p>
+<p>　対応フォーマットはGIF、JPEG、PNGです。</p>
 </li>
 
-<!--■■■名前■■■-->
+
+<!--名前-->
 <li class="name">
 <label for="name">名前*</label>
-<input id="name" type="text" name="name" placeholder="ユーザー名" size="60">
-<p>※半角英数字4〜16文字以内</p>
+<input class="name" type="text" name="name" placeholder="ユーザー名" size="60">
+<p>※半角英数字4～16文字以内</p>
 </li>
 
-<!--■■■性別-■■■-->
+<!--性別--->
 <li class="gender">
 <label for="gender">性別*</label>
-<input class="gender" type="radio" name="gender" "ユーザー名" size="60">男性
-<input class="gender" type="radio" name="gender" placeholder="aaa" size="60">女性
+<input type="radio" name="性別" value="男" />　男性　
+<input type="radio" name="性別" value="女" />　女性　
 </li>
 
 <!--■■■ID■■■-->
 <li class="id">
 <label for="id">ID*</label>
-<input id="id" type="text" name="id" placeholder="ID" size="60">
-<p>※半角英数字4〜16文字以内</p>
+<input class="id" type="text" name="id" placeholder="ID" size="60">
+<p>※半角英数字4～16文字以内</p>
 </li>
 
 <!--パスワード-->
 <li class="password1">
 <label for="password1">Password*</label>
-<input class="password1" type="password1" name="password1" placeholder=Password size="60">
-<p>※半角英数字4〜16文字以内</p>
+<input class="password1" type="password" name="password1" placeholder=Password size="60">
+<p>※半角英数字4～16文字以内</p>
 </li>
 
 <!--パスワード確認用-->
 <li class="password2">
 <label for="password2">Password(確認用)*</label>
-<input class="password2" type="password2" name="password2" placeholder=Password size="60">
-<p>※半角英数字4〜16文字以内</p>
+<input class="password2" type="password" name="password2" placeholder=Password size="60">
+<p>※半角英数字4～16文字以内</p>
 </li>
 
 <!--■■■年齢■■■-->
@@ -145,27 +186,13 @@
 <!--■■■自己プロフィール■■■-->
 <li class="profile">
 <label for="profile">自己プロフィール*</label>
-<textarea id="profile" name="profile" cols="60" rows="10"></textarea>
+<textarea class="profile" name="profile" cols="60" rows="10"></textarea>
 <p>※200文字以内</p>
 </li>
 
 <li class="button2">
 <input id="button2" type="submit" name="button2" value="送信"></li>
 
-
-<!--■■■エラーメッセージ　1　■■■-->
-
-<li class="errormessage">
-<id="errormessage">未入力の項目があります。すべての項目を入力してください。
-</li>
-
-
-<!--■■■エラーメッセージ　2　■■■-->
-<li class="errormessage">
-<id="errormessage">このIDはすでに使用されています。別のIDを指定してください。
-</li>
 </ul>
-</form>
-
 </body>
 </html>
