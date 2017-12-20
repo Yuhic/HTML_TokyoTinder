@@ -13,7 +13,7 @@
 </div>
 <form>
 <ul>
-
+  </div>
 <!--ファイルアップロード調整中-->
 <!--
 試しにスクリプトも入ってたり
@@ -47,16 +47,16 @@
   });
   </script>
 
-  <!--画像アップロード-->
+  <!--ファイルを選択ボタン-->
 <li>
 <p class=clearfix>
 <img id="img1" style="width:160px;height:200px;" />
 <input type="file" id="myfile"><br>
 </p>
 
-  <!--画像アップロードボタン-->
+  <!--画像をアップロードボタン-->
 <p class="button3">
-<input id="button3" type="submit" name="button3" value="画像をアップロード"></li>
+<input class="button3" type="submit" name="button3" value="画像をアップロード">
 </li>
 <p>　※画像の最大サイズ：700KB</p>
 <p>　対応フォーマットはGIF、JPEG、PNGです。</p>
@@ -73,11 +73,14 @@
 <!--性別--->
 <li class="gender">
 <label for="gender">性別*</label>
+
+<!--男性--->
 <input type="radio" name="性別" value="男" />　男性　
-<input type="radio" name="性別" value="女" />　女性　
+<!--女性--->
+<input class="female"type="radio" name="性別" value="女" />　女性　
 </li>
 
-<!--■■■ID■■■-->
+<!--ID-->
 <li class="id">
 <label for="id">ID*</label>
 <input class="id" type="text" name="id" placeholder="ID" size="60">
@@ -87,21 +90,22 @@
 <!--パスワード-->
 <li class="password1">
 <label for="password1">Password*</label>
-<input class="password1" type="password" name="password1" placeholder=Password size="60">
+<input class="password1" type="password" name="password1" size="60">
 <p>※半角英数字4～16文字以内</p>
 </li>
 
 <!--パスワード確認用-->
 <li class="password2">
 <label for="password2">Password(確認用)*</label>
-<input class="password2" type="password" name="password2" placeholder=Password size="60">
+<input class="password2" type="password" name="password2" size="60">
 <p>※半角英数字4～16文字以内</p>
 </li>
 
-<!--■■■年齢■■■-->
+<!--年齢、生年月日-->
 <li class="birthday">
 <label for="birthday">年齢*</label>
 
+<!--年齢、年-->
 <select name="year">
 <option value="" selected>1990</option>
 <option value="1990年">1990年</option>
@@ -133,6 +137,8 @@
 <option value="2012年">2016年</option>
 <option value="2012年">2017年</option>
 </select>
+
+<!--年齢、月-->
 <select name="month">
 <option value="" selected>1月</option>
 <option value="1月">1月</option>
@@ -148,6 +154,8 @@
 <option value="11月">11月</option>
 <option value="12月">12月</option>
 </select>
+
+<!--年齢、日-->
 <select name="day">
 <option value="" selected>1日</option>
 <option value="1日">1日</option>
@@ -183,15 +191,16 @@
 <option value="31日">31日</option>
 </select></li>
 
-<!--■■■自己プロフィール■■■-->
+<!--自己プロフィール-->
 <li class="profile">
 <label for="profile">自己プロフィール*</label>
-<textarea class="profile" name="profile" cols="60" rows="10"></textarea>
+<textarea class="profile" name="profile" placeholder="プロフィールを入力してください。ユーザー登録後に設定することも可能です。""ID" cols="60" rows="10"></textarea>
 <p>※200文字以内</p>
 </li>
 
+<!--送信ボタン-->
 <li class="button2">
-<input id="button2" type="submit" name="button2" value="送信"></li>
+<input class="button2" type="submit" name="button2" value="送信"></li>
 
 </ul>
 </body>

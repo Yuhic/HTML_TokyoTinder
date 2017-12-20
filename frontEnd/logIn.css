@@ -1,12 +1,11 @@
 html,body {
-  min-height: 100%
+  min-height: 100%;
 
 }
 body{
   background: linear-gradient(#212121,#7B1FA2);
   margin-left:0;
   margin-top:0;
-  margin-bottom:100;
   padding-bottom:100px;
 }
 body::after{
@@ -15,7 +14,9 @@ body::after{
   display: block;
   height: 0;
 }
-a:link {
+/*新規登録のリンク
+(loginhtml)*/
+  a:link {
   color:#FFFFFF;
   padding-left :100px;
 }
@@ -29,7 +30,15 @@ img {
   margin-top: 15px;
   width:290px;
   height:70px;
+}
+img#img1 {
 
+  border-radius: 5px;
+  padding: 0px;
+  margin: 5px;
+  margin-left: 50px;
+  margin-top: 0px;
+  background:#FFFFFF;
 }
 /* ヘッダー */
 /* タイトルロゴ画像に回り込みつつ
@@ -43,7 +52,8 @@ header{
 
 
 }
-/* 新規登録ボタン（login.html）*/
+/* 新規登録ボタン
+（login.html）*/
 a{
   color: #FFFFFF;
   margin-left: 220px;
@@ -71,20 +81,27 @@ li {
   padding-bottom:0px;
 
 }
-/*
-画像アップロード
-*/
-input#myfile{
+/*「ファイルを選択」の設定*/
+input.myfile{
   float:bottom;
   margin-top:15px;
   margin-left:15px;
   width:;
 }
+/*「ファイルを選択」の設定*/
+input#myfile{
+  height:35px;
+  　width:290px;
+  margin-left:20px;
+  margin-top:0px;
+  background:#FFFFFF;
+  color:#757575;
 
-/*ファイルの設定*/
+}
+/*ファイルを選択の設定*/
 ul li.file{
-  margin-bottom: 10px;
-  padding-left :80px;
+  margin-bottom: 20px;
+  padding-left :90px;
 }
 
 /*性別の設定*/
@@ -92,11 +109,17 @@ ul li.gender{
   margin-bottom: 10px;
   padding-left :80px;
 }
+/*男性の設定*/
 ul li.female{
   　width:100px;
-
-*/
 }
+
+/*女性ラジオボタンの位置*/
+input.female{
+  margin-left:130px;
+
+}
+
 /*生年月日の設定*/
 ul li.birthday{
   margin-bottom: 10px;
@@ -104,12 +127,13 @@ ul li.birthday{
 }
 
 /*生年月日のラジオボタンのサイズ
-中身をいじるとなぜかラジオボタンの高さが変わる
 */
 
-  select{
-height: 23px;
-  width:;
+select{
+width:100px;
+border-radius: 5px;
+padding: 5px;
+height: 33px;
 }
 
 /*ユーザーID(login.html)*/
@@ -141,6 +165,7 @@ ul li.password2 {
   margin-bottom: 10px;
   padding-left :80px;
 }
+/*ID*/
 ul li.id {
   margin-bottom: 10px;
   padding-left :80px;
@@ -174,17 +199,28 @@ input#button {
 
 }
 /*送信ボタン*/
-input#button2 {
+input.button2 {
   width:160px;
-  margin-left: 100px;
-  margin: 0px 600px;
+  margin-left:;
+  margin: 0px -130px;
   background: #757575;
   color: #FFFFFF;
   border-radius: 5px;
   padding: 5px 10px;
   float: center;
 
+
 }
+/*送信ボタン*/
+li.button2{
+  margin-left: 0px;
+  width:160px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-left:720px;
+}
+/*テキストエリアの形状*/
 input,textarea {
   border: solid 1px #757575;
   border-radius: 5px;
@@ -197,16 +233,28 @@ input,textarea {
 
 
 }
-input#button3{
+/*「画像をアップロードボタン」
+(signUp.html)*/
+input#button3 {
   float: center;
   margin: 10px;
+  margin-left:75px;
 }
-p.clearfix{
-  margin-left:260px;
-    margin-right:0px;
-  margin-bottom: 0px;
-
+/*「画像をアップロードボタン」
+(signUp.html)*/
+input.button3{
+  margin-left:50px;
+  margin-top:10px;
+  margin-bottom:5px;
+/*  padding-top:0px;
+  padding-left:0px;*/
+  height:45px;
+  width:200px;
+  background: #757575;
+  color: #FFFFFF;
 }
+/*画像アップロードの枠設定
+(signUp.html)*/
 .clearfix::after{
   content: "";
   clear:both;
@@ -214,9 +262,26 @@ p.clearfix{
   height: 0;
   margin:0px;
 }
+/*「画像をアップロードボタン」
+(signUp.html)*/
+p.clearfix{
+  margin:10　0px;
+  margin-left:260px;
+  margin-right:0px;
+/*display: block;*/
 
-input#button3 {
-  width:160px;
-  margin-left:50px;
-  background: #757575;
-  color: #FFFFFF;
+  margin-bottom: 0px;
+
+}
+
+
+/*レイアウトずれ調整中*/
+div.a {
+width:100%;
+height:100%;
+}
+
+#wrapper{
+width:100%;
+height:100%;
+}
