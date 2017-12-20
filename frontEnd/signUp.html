@@ -14,10 +14,11 @@
 <form>
 <ul>
   </div>
-<!--ファイルアップロード調整中-->
+
+<!--ファイルアップロード-->
 <!--
-試しにスクリプトも入ってたり
-後ほど別ファイルに置換してほしい部分。。。
+試しのスクリプト。
+後ほど別ファイルに置換してほしい部分。
 -->
 
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -47,14 +48,14 @@
   });
   </script>
 
-  <!--ファイルを選択ボタン-->
+<!--ファイルを選択ボタン-->
 <li>
 <p class=clearfix>
 <img id="img1" style="width:160px;height:200px;" />
 <input type="file" id="myfile"><br>
 </p>
 
-  <!--画像をアップロードボタン-->
+<!--画像をアップロードボタン-->
 <p class="button3">
 <input class="button3" type="submit" name="button3" value="画像をアップロード">
 </li>
@@ -90,14 +91,14 @@
 <!--パスワード-->
 <li class="password1">
 <label for="password1">Password*</label>
-<input class="password1" type="password" name="password1" size="60">
+<input class="password1" type="password" name="password1" placeholder="Password" size="60">
 <p>※半角英数字4～16文字以内</p>
 </li>
 
 <!--パスワード確認用-->
 <li class="password2">
 <label for="password2">Password(確認用)*</label>
-<input class="password2" type="password" name="password2" size="60">
+<input class="password2" type="password" name="password2" placeholder="Password確認用" size="60">
 <p>※半角英数字4～16文字以内</p>
 </li>
 
@@ -194,7 +195,8 @@
 <!--自己プロフィール-->
 <li class="profile">
 <label for="profile">自己プロフィール*</label>
-<textarea class="profile" name="profile" placeholder="プロフィールを入力してください。ユーザー登録後に設定することも可能です。""ID" cols="60" rows="10"></textarea>
+<textarea class="profile" name="profile" placeholder="プロフィールを入力してください。
+ユーザー登録後に設定することも可能です。""ID" cols="62" rows="10"wrap="hard"  maxlength="200"></textarea>
 <p>※200文字以内</p>
 </li>
 

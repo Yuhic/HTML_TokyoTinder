@@ -90,12 +90,16 @@ input.myfile{
 }
 /*「ファイルを選択」の設定*/
 input#myfile{
-  height:35px;
-  　width:290px;
-  margin-left:20px;
-  margin-top:0px;
-  background:#FFFFFF;
-  color:#757575;
+  height: 35px;
+  width: 245px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 0px;
+  margin-left: 15px;
+  margin-top: 0px;
+  background: #FFFFFF;
+  color: #757575;
 
 }
 /*ファイルを選択の設定*/
@@ -130,10 +134,11 @@ ul li.birthday{
 */
 
 select{
-width:100px;
-border-radius: 5px;
-padding: 5px;
-height: 33px;
+ width:100px;
+ border-radius: 5px;
+ padding: 5px;
+ height: 33px;
+ margin-right:-7px;
 }
 
 /*ユーザーID(login.html)*/
@@ -271,17 +276,11 @@ p.clearfix{
 /*display: block;*/
 
   margin-bottom: 0px;
-
 }
+textarea.profile{
+ resize: none;
+  overflow: auto;
+｝
+textarea {
 
-
-/*レイアウトずれ調整中*/
-div.a {
-width:100%;
-height:100%;
-}
-
-#wrapper{
-width:100%;
-height:100%;
 }
