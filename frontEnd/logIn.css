@@ -37,7 +37,7 @@ img#img1 {
   padding: 0px;
   margin: 5px;
   margin-left: 50px;
-  margin-top: 0px;
+  margin-top: 60px;
   background:#FFFFFF;
 }
 /* ヘッダー */
@@ -92,18 +92,26 @@ input.myfile{
 input#myfile{
   height: 35px;
   width: 245px;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
   padding-top: 10px;
   padding-bottom: 0px;
   padding-left: 25px;
   padding-right: 0px;
   margin-left: 15px;
-  margin-top: 0px;
+  /*
+  margin-top: 70px;*/
   background: #FFFFFF;
   color: #757575;
 
 }
 /*ファイルを選択の設定*/
 ul li.file{
+  margin-bottom: 20px;
+  padding-left :90px;
+}
+ul li.photo{
   margin-bottom: 20px;
   padding-left :90px;
 }
@@ -129,6 +137,7 @@ ul li.birthday{
   margin-bottom: 10px;
   padding-left :80px;
 }
+
 
 /*生年月日のラジオボタンのサイズ
 */
@@ -272,10 +281,10 @@ input.button3{
 p.clearfix{
   margin:10　0px;
   margin-left:260px;
-  margin-right:0px;
-/*display: block;*/
+  margin-right:0px;　
+  clear:both;
 
-  margin-bottom: 0px;
+  margin-bott om: 0px;
 }
 textarea.profile{
  resize: none;
